@@ -2,8 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {NextPageWithLayout} from "@/models";
+import {MainLayout} from "@/components/layout";
 
-const Home: NextPage = () => {
+const Home: NextPageWithLayout = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -32,7 +34,6 @@ const Home: NextPage = () => {
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
-
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
@@ -68,5 +69,7 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
+Home.Layout = MainLayout;
 
 export default Home
