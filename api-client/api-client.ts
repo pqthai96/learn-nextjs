@@ -17,4 +17,4 @@ axiosClient.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 
-export default axiosClient
+export default axiosClient;

@@ -1,5 +1,5 @@
 import * as React from "react";
-import {MainLayout} from "@/components/layout";
+import {AdminLayout, MainLayout} from "@/components/layout";
 
 export interface AboutPageProps {
 }
@@ -10,4 +10,4 @@ export default function AboutPage(props: AboutPageProps) {
   )
 }
 
-AboutPage.Layout = MainLayout;
+AboutPage.Layout = AdminLayout;
